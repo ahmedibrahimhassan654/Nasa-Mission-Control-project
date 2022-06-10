@@ -1,5 +1,5 @@
 {
-  "name": "nasa-mission-control-project",
+  "name": "nasa-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,23 +9,12 @@
     "install": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
-    "watch": "concurrently \"npm run server\" \"npm run client \"",
+    "watch": "npm run server & npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server",
     "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm test --prefix server && npm test --prefix client"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahmedibrahimhassan654/Nasa-Mission-Control-project.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ahmedibrahimhassan654/Nasa-Mission-Control-project/issues"
-  },
-  "homepage": "https://github.com/ahmedibrahimhassan654/Nasa-Mission-Control-project#readme",
-  "dependencies": {
-    "concurrently": "^7.1.0"
-  }
+  "license": "ISC"
 }
